@@ -1,0 +1,17 @@
+body {
+    height: 100%;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 100px 50px 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
