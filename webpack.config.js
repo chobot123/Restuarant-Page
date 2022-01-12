@@ -12,7 +12,7 @@ module.exports = {
 
     new HtmlWebpackPlugin({
 
-      title: 'Isekaiya',
+      title: 'Beef',
 
     }),
 
