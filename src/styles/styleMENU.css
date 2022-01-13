@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    overflow: hidden;
+    
 }
 
 body {
@@ -9,20 +9,22 @@ body {
 }
 
 #content {
-    background-image: url("./1278235.jpg");
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/1278235.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: inherit;
 }
 
-#header {
-    position: relative;
+.header {
     display: flex;
-    margin: 0px;
     justify-content: space-between; 
     align-items: center;
+    margin: 0px;
     padding: 10px;
 }
-#header,
+.header,
 .main {
     background-color: rgba(0,0,0, 0.6);
 }
@@ -47,14 +49,17 @@ button {
     text-decoration: none; /* I added this for clarity of effect */
     padding: 0px;
     background: none;
-
 }
 
 button:hover {
     border-bottom: 2px solid red;
 }
 
-#nav {
+.active {
+    border-bottom: 2px solid red;
+}
+
+.nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,35 +68,48 @@ button:hover {
 }
 
 
-#content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-.main, 
-.home {
-    position: relative;
-    height: 100%;
-}
-
 .main {
     display: flex;
+    flex: auto;
     flex-direction: column;
 }
 
 .home {
     display: flex;
+    flex: auto;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-#txt-container {
-    margin: 200px;
+#founder,
+#mission {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 50px;
+    border-radius: 12px;
+}
+
+#founder,
+#mission {
+    font-size: 100px;
+    font-family: 'The Nautigal', cursive;
+}
+
+#txt {
+    font-size: 18px;
+    margin: 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+
+.txt-container {
+    margin: 150px;
     border-radius: 12px;
     opacity: 1;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
 
@@ -110,7 +128,6 @@ button:hover {
 
 .container {
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;

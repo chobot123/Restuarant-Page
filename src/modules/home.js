@@ -1,9 +1,9 @@
-import {content} from "../index.js"
+import {main} from "./main"
 
+const home = document.createElement("div");
+home.className = "home";
 
-function Home() {
-    const home = document.createElement("div");
-    home.className = "home";
+function makeHome() {
 
     const txtContainer = document.createElement("div");
     txtContainer.className = "txt-container";
@@ -14,7 +14,7 @@ function Home() {
     home.appendChild(txtContainer);
     home.appendChild(container);
 
-    let makeTxt = () => {
+    const makeTxt = () => {
         //welcome
         let welcome = document.createElement("div");
         welcome.id = "welcome";
@@ -30,7 +30,7 @@ function Home() {
         txtContainer.appendChild(msg);
     }
 
-    let footer = () => {
+    const footer = () => {
         //address
         let address = document.createElement("div");
         address.id = "address";
@@ -48,4 +48,7 @@ function Home() {
 
     makeTxt();
     footer();
+
 }
+
+export {home, makeHome}

@@ -1,11 +1,28 @@
+import { content} from "../index";
 
-
+//header element
 const header = document.createElement("div");
 header.className = "header";
 
+//nav element
 const nav = document.createElement("div");
 nav.className = "nav";
 
+//nav bar buttons
+const home = document.createElement("button");
+let menu = document.createElement("button");
+let about = document.createElement("button");
+
+
+const makeHeader = () => {
+
+    const header = document.createElement("div");
+    header.className = "header";
+
+    const nav = document.createElement("div");
+    nav.className = "nav";
+
+    content.appendChild(header);
 
     let restuarantName = () => {
         //make restaurant name element
@@ -20,16 +37,13 @@ nav.className = "nav";
     let navbar = () => {
 
         //make home, menu, about tab
-        let home = document.createElement("button");
-        home.id = "home";
+        home.id = "home-nav";
         home.innerHTML = "Home";
 
-        let menu = document.createElement("button");
-        menu.id = "menu";
+        menu.id = "menu-nav";
         menu.innerHTML = "Menu";
 
-        let about = document.createElement("button");
-        about.id = "about";
+        about.id = "about-nav";
         about.innerHTML = "About";
 
         //append to nav which appends to header
@@ -39,11 +53,9 @@ nav.className = "nav";
         header.appendChild(nav);
     }
 
-    let makeHeader = () => {
-        restuarantName();
-        navbar();
-        content.appendChild(header);
-    }
+    restuarantName();
+    navbar();
+}
 
-    export {header, nav, makeHeader}
+    export {home, menu, about, makeHeader}
 

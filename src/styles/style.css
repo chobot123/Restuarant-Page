@@ -1,0 +1,124 @@
+
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0px;
+}
+
+#content {
+    background-image: url("../images/1278235.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    margin: 0px;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+}
+.header,
+.main {
+    background-color: rgba(0,0,0, 0.6);
+}
+
+#name,
+button {
+    color: white;
+    font-weight: bolder;
+    opacity: 1;
+}
+
+#name {
+    font-family: 'The Nautigal', cursive;
+    font-size: 64px;
+    padding-left: 100px;
+}
+
+button {
+    font-size: 16px;
+    border: 2px solid transparent; /* <- here */
+    transition: border-bottom 1s;
+    text-decoration: none; /* I added this for clarity of effect */
+    padding: 0px;
+    background: none;
+
+}
+
+button:hover {
+    border-bottom: 2px solid red;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+    gap: 50px;
+}
+
+
+#content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.main, 
+.home {
+    position: relative;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt-container {
+    margin: 200px;
+    border-radius: 12px;
+    opacity: 1;
+    color: white;
+    
+}
+
+#welcome {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 100px;
+    /*font-family: 'The Nautigal', cursive;*/
+    font-weight: bolder;
+}
+
+#msg {
+    text-align: center;
+    font-size: 64px;
+    font-family: 'The Nautigal', cursive;
+}
+
+.container {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    align-self: stretch;
+    color: white;
+    background-color: black;
+}
