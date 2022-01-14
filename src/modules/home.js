@@ -1,4 +1,3 @@
-import {main} from "./main"
 
 const home = document.createElement("div");
 home.className = "home";
@@ -6,7 +5,7 @@ home.className = "home";
 function makeHome() {
 
     const txtContainer = document.createElement("div");
-    txtContainer.className = "txt-container";
+    txtContainer.className = "welcome-container";
 
     const container = document.createElement("div");
     container.className = "container";
@@ -48,7 +47,7 @@ function makeHome() {
 
     makeTxt();
     footer();
-
+    
 }
 
 export {home, makeHome}

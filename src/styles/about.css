@@ -1,0 +1,21 @@
+#founder,
+#mission {
+    padding: 50px;
+    border-radius: 12px;
+    font-size: 100px;
+    font-family: 'The Nautigal', cursive;
+}
+
+#txt {
+    font-size: 18px;
+    margin: 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+
+.txt-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

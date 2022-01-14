@@ -1,13 +1,5 @@
 import { content} from "../index";
 
-//header element
-const header = document.createElement("div");
-header.className = "header";
-
-//nav element
-const nav = document.createElement("div");
-nav.className = "nav";
-
 //nav bar buttons
 const home = document.createElement("button");
 let menu = document.createElement("button");
@@ -15,30 +7,32 @@ let about = document.createElement("button");
 
 
 const makeHeader = () => {
-
+    
+    //header element
     const header = document.createElement("div");
     header.className = "header";
 
+    //nav element
     const nav = document.createElement("div");
     nav.className = "nav";
 
-    content.appendChild(header);
-
+    //make restuarant name and append to header
     let restuarantName = () => {
-        //make restaurant name element
+
         let name = document.createElement("div");
         name.id = "name";
         name.innerHTML = "Beef";
 
-        //append to header
         header.appendChild(name);
-    }
 
+    }
+    //create 3 buttons in nav bar - home, menu, about
     let navbar = () => {
 
         //make home, menu, about tab
         home.id = "home-nav";
         home.innerHTML = "Home";
+        home.classList.add("active");
 
         menu.id = "menu-nav";
         menu.innerHTML = "Menu";
@@ -55,6 +49,10 @@ const makeHeader = () => {
 
     restuarantName();
     navbar();
+
+    //append header to content
+    content.appendChild(header);
+
 }
 
     export {home, menu, about, makeHeader}

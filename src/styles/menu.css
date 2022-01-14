@@ -1,0 +1,45 @@
+.menu {
+    color: white;
+    flex-direction: column;
+}
+
+#menu-title {
+    text-align: center;
+    font-family: 'The Nautigal', cursive;
+    font-size: 125px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.appetizers,
+.platters
+{
+    
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    min-width: 522px;
+    gap: 20px;
+}
+
+#food{
+
+    font-family: initial;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+#description {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#item-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
